@@ -1,0 +1,23 @@
+{
+  "name": "new-canteen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch sass/style.scss sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarinaMasalova/productly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarinaMasalova/new-canteen/issues"
+  },
+  "homepage": "https://github.com/KarinaMasalova/new-canteen#readme",
+  "description": "",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
+}
