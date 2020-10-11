@@ -1,0 +1,14 @@
+.logo-header {
+    display: flex;
+}
+
+.logo-path {
+    @extend %transition;
+}
+
+.logo-svg:hover {
+    cursor: pointer;
+    .logo-path {
+        fill: $color-primary;
+    }
+}

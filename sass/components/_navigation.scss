@@ -1,0 +1,25 @@
+.navigation {
+    position: relative;
+    @extend %display;
+    >* {
+        position: relative;
+        @extend %case;
+        @include font($size: 1.4rem, $weight: 300, $style: normal, $height: 1.68rem);
+        >* {
+            color: $color-dark;
+            text-decoration: none;
+            @extend %font;
+        }
+    }
+}
+
+.drop-menu__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+
+}
+
+.navigation__item:hover .drop-menu__list {
+    display: block;
+}

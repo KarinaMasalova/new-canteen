@@ -1,0 +1,57 @@
+.ico {
+    cursor: pointer;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+}
+
+.ico-instagram {
+    &_bright {
+        background-image: url('../src/img/icons/instagram-bright.svg');
+        background-repeat: no-repeat;
+        padding-right: 55px;
+    }
+    &_light {
+        background-image: url('../src/img/icons/instagram-light.svg');
+    }
+}
+
+.icon-square {
+    width: 61px;
+    height: 61px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &_search {
+        background-color: $color-search;
+    }
+    &_user{
+        background-color: $color-user;
+    }
+    &_cart {
+        background-color: $color-primary;
+    }
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.ico_search {
+    background-image: url('../src/img/icons/search.svg');
+}
+
+.ico_user {
+    background-image: url('../src/img/icons/user.svg');
+}
+
+.ico_cart {
+    background-image: url('../src/img/icons/cart.svg');
+    width: 23px;
+    height: 23px;
+}
+
+.ico_arrow-down {
+    background-image: url('../src/img/icons/arrow.svg');
+    width: 12px;
+    height: 6px;
+}

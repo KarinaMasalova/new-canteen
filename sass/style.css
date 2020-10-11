@@ -1,9 +1,56 @@
 @font-face {
   font-family: "Cyntho Next";
-  src: url("../../src/fonts/CynthoNext-Regular.eot");
+  src: url("../src/fonts/CynthoNext-Light.eot");
   /* IE9 Compat Modes */
-  src: url("../../src/fonts/CynthoNext-Regular.ttf") format("truetype");
+  src: url("../src/fonts/CynthoNext-Light.woff2") format("woff2"), url("../src/fonts/CynthoNext-Light.woff") format("woff"), url("../src/fonts/CynthoNext-Light.ttf") format("truetype"), url("../src/fonts/CynthoNext-Light.svg") format("svg");
+  /* Legacy iOS */
+  font-weight: 300;
+  font-style: normal;
 }
+@font-face {
+  font-family: "Cyntho Next";
+  src: url("../src/fonts/CynthoNext-Regular.eot");
+  src: url("../src/fonts/CynthoNext-Regular.woff2") format("woff2"), url("../src/fonts/CynthoNext-Regular.woff") format("woff"), url("../src/fonts/CynthoNext-Regular.ttf") format("truetype"), url("../src/fonts/CynthoNext-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cyntho Next";
+  src: url("../src/fonts/CynthoNext-Medium.eot");
+  src: url("../src/fonts/CynthoNext-Medium.woff2") format("woff2"), url("../src/fonts/CynthoNext-Medium.woff") format("woff"), url("../src/fonts/CynthoNext-Medium.ttf") format("truetype"), url("../src/fonts/CynthoNext-Medium.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cyntho Next";
+  src: url("../src/fonts/CynthoNext-Bold.eot");
+  src: url("../src/fonts/CynthoNext-Bold.woff2") format("woff2"), url("../src/fonts/CynthoNext-Bold.woff") format("woff"), url("../src/fonts/CynthoNext-Bold.ttf") format("truetype"), url("../src/fonts/CynthoNext-Bold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cyntho Next";
+  src: url("../src/fonts/CynthoNext-SemiBold.eot");
+  src: url("../src/fonts/CynthoNext-SemiBold.woff2") format("woff2"), url("../src/fonts/CynthoNext-SemiBold.woff") format("woff"), url("../src/fonts/CynthoNext-SemiBold.ttf") format("truetype"), url("../src/fonts/CynthoNext-SemiBold.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+.logo-path {
+  transition: all 0.3s ease-out;
+}
+
+.line-1__right, .line-1__left, .header__line-2, .header__line-1, .header__wrapper, .navigation {
+  display: flex;
+}
+
+.navigation > * {
+  text-transform: uppercase;
+}
+
+.telephone, .navigation > * > * {
+  font-family: "Cyntho Next", Verdana, sans-serif;
+}
+
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -425,6 +472,147 @@ ul {
 
 section, main, header, footer, article {
   display: block;
+}
+
+html {
+  font-size: 10px;
+}
+
+.ico {
+  cursor: pointer;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+}
+
+.ico-instagram_bright {
+  background-image: url("../src/img/icons/instagram-bright.svg");
+  background-repeat: no-repeat;
+  padding-right: 55px;
+}
+.ico-instagram_light {
+  background-image: url("../src/img/icons/instagram-light.svg");
+}
+
+.icon-square {
+  width: 61px;
+  height: 61px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-square_search {
+  background-color: #FFCBB4;
+}
+.icon-square_user {
+  background-color: #FAB798;
+}
+.icon-square_cart {
+  background-color: #F4A17B;
+}
+.icon-square:hover {
+  opacity: 0.5;
+}
+
+.ico_search {
+  background-image: url("../src/img/icons/search.svg");
+}
+
+.ico_user {
+  background-image: url("../src/img/icons/user.svg");
+}
+
+.ico_cart {
+  background-image: url("../src/img/icons/cart.svg");
+  width: 23px;
+  height: 23px;
+}
+
+.ico_arrow-down {
+  background-image: url("../src/img/icons/arrow.svg");
+  width: 12px;
+  height: 6px;
+}
+
+.logo-header {
+  display: flex;
+}
+
+.logo-svg:hover {
+  cursor: pointer;
+}
+.logo-svg:hover .logo-path {
+  fill: #F4A17B;
+}
+
+.navigation {
+  position: relative;
+}
+.navigation > * {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.68rem;
+}
+.navigation > * > * {
+  color: #383838;
+  text-decoration: none;
+}
+
+.drop-menu__list {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+.navigation__item:hover .drop-menu__list {
+  display: block;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: auto;
+  /*@include media-laptop {
+      padding: 0 46px;
+  }
+  @include media-mobile {
+      padding: 0 21px;
+  }*/
+}
+
+.header {
+  background: #FFFFFF;
+  height: 130px;
+}
+
+.header__wrapper {
+  flex-direction: column;
+}
+
+.header__line-1 {
+  height: 61px;
+}
+
+.header__line-2 {
+  justify-content: space-between;
+  height: 68px;
+}
+
+.line-1__left {
+  width: 85%;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1.5px solid #DADADA;
+}
+
+.telephone {
+  color: #383838;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 2.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
