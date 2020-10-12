@@ -714,6 +714,11 @@ html {
   font-style: normal;
   line-height: 4.08rem;
 }
+.card__substract:hover,
+.card__add:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 
 .card__number {
   color: #383838;
