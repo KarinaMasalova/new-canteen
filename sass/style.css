@@ -39,15 +39,16 @@
   transition: all 0.3s ease-out;
 }
 
-.footer__info, .footer__navigation, .footer__logo, .feedbacks__buttons, .about-project__wrapper, .line-1__right, .line-1__left, .header__line-2, .header__line-1, .header__wrapper, .navigation, .ico-instagram_light {
+.footer__info, .footer__navigation, .footer__logo, .feedbacks__buttons, .eco-products__cards, .about-project__wrapper, .line-1__right, .line-1__left, .header__line-2, .header__line-1, .header__wrapper, .card__footer, .card__characteristics, .navigation, .ico-instagram_light {
   display: flex;
 }
 
-.feedbacks__title, .about-project__title, .menu__title, .dinners__title, .category__link, .navigation > *, .button {
+.feedbacks__title, .eco-products__title, .about-project__title, .menu__title, .dinners__title, .category__link, .navigation > *, .button {
   text-transform: uppercase;
 }
 
-.footer__info, .footer__link > *, .feedbacks__title, .about-project__text, .about-project__title, .menu__text, .menu__title, .dinners__text, .dinners__title, .promo__text, .promo__title, .telephone, .category__link, .drop-menu__link, .navigation > * > *, .button {
+.footer__info, .footer__link > *, .feedbacks__title, .eco-products__title, .about-project__text, .about-project__title, .menu__text, .menu__title, .dinners__text, .dinners__title, .promo__text, .promo__title, .telephone, .tag, .card__number, .card__substract,
+.card__add, .card__price, .card__weight, .card__title, .card__category, .category__link, .drop-menu__link, .navigation > * > *, .button {
   font-family: "Cyntho Next", Verdana, sans-serif;
 }
 
@@ -646,6 +647,113 @@ html {
   opacity: 1;
 }
 
+.card__img {
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.card__body {
+  height: 155px;
+  background-color: #FFFFFF;
+  padding: 10px 18px 15px 17px;
+}
+
+.card__category {
+  color: #5F5F5F;
+  padding-bottom: 5px;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.2rem;
+}
+
+.card__title {
+  min-height: 45px;
+  margin: 0;
+  padding-bottom: 13px;
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.68rem;
+}
+
+.card__characteristics {
+  justify-content: space-between;
+}
+
+.card__weight {
+  color: #383838;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.68rem;
+}
+
+.card__price {
+  color: #383838;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 2.16rem;
+}
+
+.card__footer {
+  padding-top: 11px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__substract,
+.card__add {
+  color: #F4A17B;
+  font-size: 3.4rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 4.08rem;
+}
+
+.card__number {
+  color: #383838;
+  padding: 0 1px 0 4px;
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.88rem;
+}
+
+.card__button {
+  width: 11.4rem;
+  height: 3.5rem;
+  padding: 0;
+}
+
+.tag {
+  position: absolute;
+  left: 0;
+  padding: 4px 14px 5px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.44rem;
+}
+.tag_new {
+  background-color: #8AC9A3;
+}
+.tag_hit {
+  background-color: #8ABEC9;
+}
+.tag_sale {
+  background-color: #F16254;
+}
+.tag_second {
+  top: 5.5%;
+}
+
 .wrapper {
   max-width: 1170px;
   margin: auto;
@@ -824,7 +932,37 @@ html {
 
 .eco-products {
   background-image: url("../src/img/backgrounds/eco-bg.png");
-  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 130px 0 129px;
+}
+
+.eco-products__title {
+  margin: 0;
+  padding-bottom: 78px;
+  color: #383838;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 3.12rem;
+}
+
+.eco-products__cards {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 28px;
+}
+
+.eco-products__card {
+  box-shadow: 0px 0px 20px rgba(244, 161, 123, 0.18);
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.eco-products__button {
+  display: block;
+  margin: 0 auto;
 }
 
 .feedbacks {

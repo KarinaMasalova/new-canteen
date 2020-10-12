@@ -1,0 +1,72 @@
+.card__img {
+    background-color: $color-light;
+    border-radius: 5px;
+}
+
+.card__body {
+    height: 155px;
+    background-color: $color-light;
+    padding: 10px 18px 15px 17px;
+}
+
+.card__category {
+    color: $color-card-category;
+    padding-bottom: 5px;
+    margin: 0;
+    @extend %font;
+    @include font($size: 1.0rem, $weight: 300, $height: 1.2rem);
+}
+
+.card__title {
+    min-height: 45px;
+    margin: 0;
+    padding-bottom: 13px;
+    color: $color-text;
+    @extend %font;
+    @include font($size: 1.4rem, $weight: 400, $height: 1.68rem);
+}
+
+.card__characteristics {
+    @extend %display;
+    justify-content: space-between;
+}
+
+.card__weight {
+    color: $color-dark;
+    @extend %font;
+    @include font($size: 1.4rem, $weight: 400, $height: 1.68rem);
+}
+
+.card__price {
+    color: $color-dark;
+    margin: 0;
+    @extend %font;
+    @include font($size: 1.8rem, $weight: 300, $height: 2.16rem);
+}
+
+.card__footer {
+    padding-top: 11px;
+    @extend %display;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__substract,
+.card__add {
+    color: $color-primary;
+    @extend %font;
+    @include font($size: 3.4rem, $weight: 600, $height: 4.08rem);
+}
+
+.card__number {
+    color: $color-dark;
+    padding: 0 1px 0 4px;
+    @extend %font;
+    @include font($size: 2.4rem, $weight: 400, $height: 2.88rem);
+}
+
+.card__button {
+    width: 11.4rem;
+    height: 3.5rem;
+    padding: 0;
+}

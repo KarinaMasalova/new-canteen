@@ -6,6 +6,7 @@
     <title>Новая столовая</title>
     <link rel="icon" href="./src/img/logo-icon.svg">
     <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
     <header class="header">
@@ -178,10 +179,171 @@
         <section class="eco-products">
             <div class="wrapper">
                 <h2 class="eco-products__title">эко-продукты от «шанти лавка»</h2>
-                <div class="4-column-layout">
-                    <!--cards-->
+                <div class="eco-products__cards">
+                    <div class="eco-products__card">
+                        <span class="tag tag_new">Новинка</span>
+                        <img class="card__img" src="./src/img/meal/coconut-oil.png" alt="Coconut oil">
+                        <div class="card__body">
+                            <p class="card__category">Натуральные масла</p>
+                            <h5 class="card__title">Масло кокосовое</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">90р</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__amount">
+                                    <span class="card__substract">-</span>
+                                    <span class="card__number">2</span>
+                                    <span class="card__add">+</span>
+                                </div>
+                                <button class="button button_colored card__button">в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eco-products__card">
+                        <span class="tag tag_hit">Хит</span>
+                        <img class="card__img" src="./src/img/meal/chocolate.png" alt="Chocolate">
+                        <div class="card__body">
+                            <p class="card__category">Сладости, шоколад, сиропы</p>
+                            <h5 class="card__title">Шоколад на меду горький<br/>Вкус и Польза</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">7,5р</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__amount">
+                                    <span class="card__substract">-</span>
+                                    <span class="card__number">2</span>
+                                    <span class="card__add">+</span>
+                                </div>
+                                <button class="button button_colored card__button">в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eco-products__card">
+                        <span class="tag tag_hit">Хит</span>
+                        <span class="tag tag_new tag_second">Новинка</span>
+                        <img class="card__img" src="./src/img/meal/red-cabbage.png" alt="Red cabbage">
+                        <div class="card__body">
+                            <p class="card__category">Натуральные масла</p>
+                            <h5 class="card__title">Маринованная красная капуста</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">90р</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__amount">
+                                    <span class="card__substract">-</span>
+                                    <span class="card__number">2</span>
+                                    <span class="card__add">+</span>
+                                </div>
+                                <button class="button button_colored card__button">в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eco-products__card">
+                        <span class="tag tag_sale">Акция</span>
+                        <img class="card__img" src="./src/img/meal/red-cabbage.png" alt="Red cabbage">
+                        <div class="card__body">
+                            <p class="card__category">Натуральные масла</p>
+                            <h5 class="card__title">Маринованная красная капуста</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">90р</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__amount">
+                                    <span class="card__substract">-</span>
+                                    <span class="card__number">2</span>
+                                    <span class="card__add">+</span>
+                                </div>
+                                <button class="button button_colored card__button">в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eco-products__card">
+                        <span class="tag tag_new">Новинка</span>
+                        <img class="card__img" src="./src/img/meal/coconut-oil.png" alt="Coconut oil">
+                        <div class="card__body">
+                            <p class="card__category">Натуральные масла</p>
+                            <h5 class="card__title">Масло кокосовое</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">90р</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__amount">
+                                    <span class="card__substract">-</span>
+                                    <span class="card__number">2</span>
+                                    <span class="card__add">+</span>
+                                </div>
+                                <button class="button button_colored card__button">в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eco-products__card">
+                        <span class="tag tag_hit">Хит</span>
+                        <img class="card__img" src="./src/img/meal/chocolate.png" alt="Chocolate">
+                        <div class="card__body">
+                            <p class="card__category">Сладости, шоколад, сиропы</p>
+                            <h5 class="card__title">Шоколад на меду горький<br/>Вкус и Польза</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">7,5р</p>
+                                <div class="card__footer">
+                                    <div class="card__amount">
+                                        <span class="card__substract">-</span>
+                                        <span class="card__number">2</span>
+                                        <span class="card__add">+</span>
+                                    </div>
+                                    <button class="button button_colored card__button">в корзину</button>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="eco-products__card">
+                        <span class="tag tag_hit">Хит</span>
+                        <span class="tag tag_new tag_second">Новинка</span>
+                        <img class="card__img" src="./src/img/meal/red-cabbage.png" alt="Red cabbage">
+                        <div class="card__body">
+                            <p class="card__category">Натуральные масла</p>
+                            <h5 class="card__title">Маринованная красная капуста</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">90р</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__amount">
+                                    <span class="card__substract">-</span>
+                                    <span class="card__number">2</span>
+                                    <span class="card__add">+</span>
+                                </div>
+                                <button class="button button_colored card__button">в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eco-products__card">
+                        <span class="tag tag_sale">Акция</span>
+                        <img class="card__img" src="./src/img/meal/red-cabbage.png" alt="Red cabbage">
+                        <div class="card__body">
+                            <p class="card__category">Натуральные масла</p>
+                            <h5 class="card__title">Маринованная красная капуста</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">90р</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__amount">
+                                    <span class="card__substract">-</span>
+                                    <span class="card__number">2</span>
+                                    <span class="card__add">+</span>
+                                </div>
+                                <button class="button button_colored card__button">в корзину</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button class="button button_colored">посмотреть все</button>
+                <button class="button button_colored eco-products__button">посмотреть все</button>
             </div>
         </section>
         <section class="feedbacks">
