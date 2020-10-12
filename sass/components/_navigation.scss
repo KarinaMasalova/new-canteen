@@ -1,12 +1,15 @@
 .navigation {
+    margin: 0;
+    padding: 26px 0 25px;
     position: relative;
     @extend %display;
     >* {
+        padding-left: 45px;
         position: relative;
         @extend %case;
         @include font($size: 1.4rem, $weight: 300, $style: normal, $height: 1.68rem);
         >* {
-            color: $color-dark;
+            color: $color-text;
             text-decoration: none;
             @extend %font;
         }
@@ -17,7 +20,6 @@
     display: none;
     position: absolute;
     top: 100%;
-
 }
 
 .navigation__item:hover .drop-menu__list {
