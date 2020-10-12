@@ -1,0 +1,39 @@
+.about-project {
+    background-color: $color-light;
+    padding: 88px 0 95px;
+}
+
+.about-project__wrapper {
+    @extend %display;
+    justify-content: space-between;
+}
+
+.about-project__info {
+    padding: 94px 0 111px;
+}
+
+.about-project__title {
+    color: $color-dark;
+    @extend %font;
+    @extend %case;
+    @include font($size: 2.6rem, $weight: 400, $height: 3.12rem);
+}
+
+.about-project__text {
+    color: $color-text;
+    align-items: left;
+    padding: 15px 0 38px;
+    margin: 0;
+    max-width: 465px;
+    @extend %font;
+    @include font($size: 1.4rem, $weight: 300, $height: 1.68rem);
+}
+
+.about-project__img {
+    width: 605.04px;
+    height: 400px;
+}
+
+.about-project__button {
+    width: 184px;
+}

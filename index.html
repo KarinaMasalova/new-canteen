@@ -13,7 +13,9 @@
             <div class="header__line-1 line-1">
                 <div class="line-1__left">
                     <a class="telephone" href="tel:375333750760">+ 375 (33) 375-07-60</a>
-                    <span class="ico ico-instagram_bright"></span>
+                    <span class="ico ico-instagram_bright">
+                        <a href="#"></a>
+                    </span>
                 </div>
                 <div class="line-1__right">
                     <span class="icon-square icon-square_search">
@@ -105,7 +107,7 @@
             <div class="wrapper">
                 <h1 class="promo__title">Medium length display headline</h1>
                 <p class="promo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.</p>
-                <button class="button button_colored">подробнее</button>
+                <button class="button button_colored promo__button">подробнее</button>
             </div>
             <span class="promo__transition"></span>
         </section>
@@ -121,7 +123,7 @@
                         <a class="category__link">вторник</a>
                     </li>
                     <li class="category__item category_active">
-                        <a class="category__link">среда</a>
+                        <a class="category__link category__link_active">среда</a>
                     </li>
                     <li class="category__item">
                         <a class="category__link">четверг</a>
@@ -145,7 +147,7 @@
                 <p class="menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                 <ul class="categories">
                     <li class="category__item category_active">
-                        <a class="category__link">десерты</a>
+                        <a class="category__link category__link_active">десерты</a>
                     </li>
                     <li class="category__item">
                         <a class="category__link">хлеб и выпечка</a>
@@ -164,11 +166,11 @@
             </div>
         </section>
         <section class="about-project">
-            <div class="wrapper">
+            <div class="wrapper about-project__wrapper">
                 <div class="about-project__info">
                     <h2 class="about-project__title">о проекте</h2>
                     <p class="about-project__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.</p>
-                    <button class="button button_colored">как добраться</button>
+                    <button class="button button_colored about-project__button">как добраться</button>
                 </div>
                 <img class="about-project__img" src="src/img/about-project/about-project.png" alt="">
             </div>
@@ -186,8 +188,10 @@
             <div class="wrapper">
                 <h2 class="feedbacks__title">отзывы</h2>
                 <!--slider-->
-                <button class="button button_colored">написать отзыв</button>
-                <button class="button button_bordered">все отзывы</button>
+                <div class="feedbacks__buttons">
+                    <button class="button button_colored feedbacks__button1">написать отзыв</button>
+                    <button class="button button_bordered feedbacks__button2">все отзывы</button>
+                </div>
             </div>
         </section>
     </main>
@@ -195,14 +199,16 @@
         <div class="wrapper">
             <img class="footer__logo" src="src/img/logo-footer.svg" alt="">
             <ul class="footer__navigation">
-                <li><a href="#">Меню</a></li>
-                <li><a href="#">Магазин</a></li>
-                <li><a href="#">Подписка</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Партнерам</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li class="footer__link"><a href="#">Меню</a></li>
+                <li class="footer__link"><a href="#">Магазин</a></li>
+                <li class="footer__link"><a href="#">Подписка</a></li>
+                <li class="footer__link"><a href="#">Доставка</a></li>
+                <li class="footer__link"><a href="#">Партнерам</a></li>
+                <li class="footer__link"><a href="#">Контакты</a></li>
             </ul>
-            <span class="ico ico-instagram_light"></span>
+            <span class="ico ico-instagram_light">
+                <a href="#"></a>
+            </span>
             <div class="footer__info">
                 <div class="footer__contacts">
                     <p>ООО "Метаркоф" УНП 193230335 Зарегистрирован Минским Горисполкомом</p>

@@ -1,0 +1,28 @@
+.feedbacks {
+    padding: 38px 0 90px;
+}
+
+.feedbacks__title {
+    @extend %case;
+    @extend %font;
+    @include font($size: 2.6rem, $weight: 400, $height: 3.12rem);
+    margin: 0;
+    text-align: center;
+}
+
+.feedbacks__buttons {
+    margin: auto;
+    @extend %display;
+    justify-content: space-between;
+    max-width: 373px;
+}
+
+.feedbacks__button1 {
+    width: 197px;
+    padding: 17px 28px;
+}
+
+.feedbacks__button2 {
+    width: 160px;
+    padding: 17px 28px;
+}

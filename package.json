@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "style": "sass --watch sass/style.scss sass/style.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "style": "sass --watch sass/style.scss sass/style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KarinaMasalova/productly.git"
+    "url": "git+https://github.com/KarinaMasalova/new-canteen.git"
   },
   "author": "",
   "license": "ISC",

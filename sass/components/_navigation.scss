@@ -7,7 +7,7 @@
         padding-left: 45px;
         position: relative;
         @extend %case;
-        @include font($size: 1.4rem, $weight: 300, $style: normal, $height: 1.68rem);
+        @include font($size: 1.4rem, $weight: 300, $height: 1.68rem);
         >* {
             color: $color-text;
             text-decoration: none;
@@ -19,9 +19,26 @@
 .drop-menu__list {
     display: none;
     position: absolute;
-    top: 100%;
+    width: 179px;
+    top: 110%;
+    left: -12%;
+    z-index: 1;
+    background-color: $color-light;
+    box-shadow: 0px 0px 20px rgba(244, 161, 123, 0.18);
+    border-radius: 5px;
+    max-height: 273px;
 }
 
 .navigation__item:hover .drop-menu__list {
     display: block;
+}
+
+.drop-menu__item {
+    align-items: center;
+}
+
+.drop-menu__link {
+    color: $color-text;
+    text-decoration: none;
+    @extend %font;
 }

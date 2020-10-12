@@ -1,0 +1,21 @@
+.categories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category__link {
+    color: $color-inactive;
+    @extend %case;
+    @extend %font;
+    @include font($size: 1.6rem, $weight: 400, $height: 1.92rem);
+    &:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    &_active {
+        color: $color-text;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

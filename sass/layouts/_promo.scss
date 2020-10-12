@@ -1,5 +1,6 @@
 .promo {
     position: relative;
+    z-index: 0;
     background-image: url('../src/img/backgrounds/promo-bg.png');
     background-position: center center;
     padding: 137px 0 202px;
@@ -10,14 +11,18 @@
     color: $color-dark;
     max-width: 364px;
     @extend %font;
-    @include font($size: 4.8rem, $style: normal, $weight: 700, $height: 5.76rem);
+    @include font($size: 4.8rem, $weight: 700, $height: 5.76rem);
 }
 
 .promo__text {
     padding: 19px 0 31px;
     max-width: 477px;
     @extend %font;
-    @include font($size: 1.4rem, $weight: 300, $height: 1.68rem, $style: normal);
+    @include font($size: 1.4rem, $weight: 300, $height: 1.68rem);
+}
+
+.promo__button {
+    width: 184px;
 }
 
 .promo__transition {

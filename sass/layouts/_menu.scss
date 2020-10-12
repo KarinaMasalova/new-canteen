@@ -1,0 +1,24 @@
+.menu {
+    background-image: url('../src/img/backgrounds/menu-bg.png');
+    background-position: 100% 100%;
+    padding: 93px 0 121px;
+}
+
+.menu__title {
+    @extend %case;
+    @extend %font;
+    @include font($size: 2.6rem, $weight: 400, $height: 3.12rem);
+    margin: 0;
+    text-align: center;
+}
+
+.menu__text {
+    text-align: center;
+    width: 373px;
+    margin: 0 auto;
+    padding: 11px 0 53px 0;
+    @extend %font;
+    @include font($size: 1.4rem, $weight: 300, $height: 1.68rem);
+}
+
+

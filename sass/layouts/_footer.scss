@@ -1,0 +1,48 @@
+.footer {
+    background-color: $color-primary;
+    padding: 42px 0 40px;
+}
+
+.footer__logo {
+    @extend %display;
+    margin: auto;
+}
+
+.footer__navigation {
+    max-width: 526px;
+    padding: 45px 0 34px;
+    margin: auto;
+    @extend %display;
+    justify-content: space-between;
+}
+
+.footer__link {
+    >* {
+        color: $color-light;
+        text-decoration: none;
+        @extend %font;
+        @include font($size: 1.4rem, $weight: 600, $height: 1.68rem);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.footer__info {
+    @extend %display;
+    @extend %font;
+    @include font($size: 1.4rem, $weight: 700, $height: 0.88rem);
+    border-top: 1px solid $color-light;
+    color: $color-light;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+.footer__contacts {
+    max-width: 540px;
+}
+
+.footer__rating {
+    text-align: right;
+    max-width: 329px;
+}

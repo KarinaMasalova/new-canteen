@@ -2,7 +2,7 @@
     @extend %font;
     @extend %case;
     @include font($size: 1.4rem, $weight: 600, $height: 1.68rem);
-    padding: 17px 46px;
+    padding: 17px 28px;
     border-radius: 5px;
     cursor: pointer;
     transition: all .3s;
@@ -11,7 +11,7 @@
         border: 1px solid $color-primary;
         color: $color-light;
         &:hover {
-            opacity: 0.7;
+            background-color: $color-hovered;
         }
     }
     &_bordered {
@@ -20,6 +20,7 @@
         color: $color-dark;
         &:hover {
             background-color: $color-primary;
+            color: $color-light;
         }
     }
 }

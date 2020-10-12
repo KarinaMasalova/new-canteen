@@ -1,0 +1,20 @@
+.dinners {
+    padding-bottom: 74px;
+ }
+
+ .dinners__title {
+    @extend %case;
+    @extend %font;
+    @include font($size: 2.6rem, $weight: 400, $height: 3.12rem);
+    margin: 0;
+    text-align: center;
+ }
+
+.dinners__text {
+    text-align: center;
+    width: 373px;
+    margin: 0 auto;
+    padding: 12px 0 52px 0;
+    @extend %font;
+    @include font($size: 1.4rem, $weight: 300, $height: 1.68rem);
+}
