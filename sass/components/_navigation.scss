@@ -1,9 +1,8 @@
 .navigation {
     margin: 0;
     padding: 26px 0 25px;
-    position: relative;
     @extend %display;
-    >* {
+    .navigation__item {
         padding-left: 45px;
         position: relative;
         @extend %case;
@@ -19,8 +18,9 @@
 .drop-menu__list {
     display: none;
     position: absolute;
+    padding: 14px 16px;
     width: 179px;
-    top: 110%;
+    top: 270%;
     left: -12%;
     z-index: 1;
     background-color: $color-light;
@@ -34,11 +34,24 @@
 }
 
 .drop-menu__item {
-    align-items: center;
+    text-align: center;
+    padding: 12px 0;
 }
 
 .drop-menu__link {
     color: $color-text;
     text-decoration: none;
+    white-space: nowrap;
     @extend %font;
+    &:hover {
+        font-weight: 500;
+        @extend %transition;
+    }
+}
+
+.drop-menu__link::before {
+    content: '';
+    border-top: 1px solid lightgray;
+    width: 4rem;
+    transform: translateY(-1rem);
 }

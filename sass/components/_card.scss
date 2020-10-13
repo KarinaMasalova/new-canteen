@@ -32,6 +32,7 @@
 }
 
 .card__weight {
+    margin: 0;
     color: $color-dark;
     @extend %font;
     @include font($size: 1.4rem, $weight: 400, $height: 1.68rem);
