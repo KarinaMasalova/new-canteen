@@ -11,7 +11,7 @@ module.exports = (env, options) => {
         mode,
         devtool: debug ? 'source-map' : 'none',
         watch: false,
-        entry: ['src/index.js', './sass/style.css'],
+        entry: ['./src/index.js', './sass/style.scss'],
         output: {
           path: path.resolve(__dirname, 'dist'),
           filename: 'main.js'
