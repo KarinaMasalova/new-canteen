@@ -9,8 +9,20 @@ window.addEventListener('load', () => {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',    
     },
-    slidesPerView: 4,
-    spaceBetween: 30,
+    breakpoints: {
+      1170: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 2.5,
+        spaceBetween: 30,
+      },
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 11,
+      },
+    }
   });
 
   const swiper2 = new Swiper('.swiper2', {    

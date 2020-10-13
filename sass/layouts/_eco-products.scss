@@ -1,7 +1,12 @@
 .eco-products {
     background-image: url('../src/img/backgrounds/eco-bg.png');
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 130px 0 129px;
+    @include media-tablet {
+        padding: 133px 0 135px;
+    }
 }
 
 .eco-products__title {
@@ -19,6 +24,12 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 28px;
+    @include media-tablet {
+        justify-content: space-around;
+        max-width: 570px;
+        padding-bottom: 25px;
+        margin: auto;
+    }
 }
 
 .eco-products__card {

@@ -13,6 +13,9 @@
             @extend %font;
         }
     }
+    @include media-tablet {
+        display: none;
+    }
 }
 
 .drop-menu__list {

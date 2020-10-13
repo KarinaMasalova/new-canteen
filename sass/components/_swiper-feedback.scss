@@ -3,6 +3,9 @@
     max-width: 64%;
     margin: 40px auto 51px;
     box-shadow: 0px 0px 15px rgba(163, 163, 163, 0.25);
+    @include media-tablet {
+        max-width: 95%;
+    }
 }
 
 .swiper-slide {
@@ -58,16 +61,33 @@
     height: 44px;
 }
 
+.swiper2-btn_next,
+.swiper2-btn_prev {
+    @include media-tablet {
+        top: 90%;
+    }
+}
+
+.swiper2-btn_next {
+    @include media-tablet {
+        right: 40%;
+    }
+    &:after {
+        background-image: url('../src/img/icons/arrow-next.svg');
+    }
+}
+
+.swiper2-btn_prev {
+    @include media-tablet {
+        left: 40%;
+    }
+    &:after {
+        background-image: url('../src/img/icons/arrow-prev.svg');
+    }
+}
+
 .swiper2-btn_prev:after,
 .swiper2-btn_next:after {
     height: 14px;
     width: 7px;
-}
-
-.swiper2-btn_next:after {
-    background-image: url('../src/img/icons/arrow-next.svg');
-}
-
-.swiper2-btn_prev:after  {
-    background-image: url('../src/img/icons/arrow-prev.svg');
 }

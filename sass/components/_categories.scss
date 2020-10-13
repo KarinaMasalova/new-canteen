@@ -1,6 +1,9 @@
 .categories {
     display: flex;
     justify-content: space-between;
+    @include media-tablet {
+        overflow-x: scroll;
+    }
 }
 
 .category__link {
@@ -17,5 +20,12 @@
         &:hover {
             opacity: 1;
         }
+    }
+}
+
+.category__item {
+    @include media-tablet {
+        padding-right: 63px;
+        white-space: nowrap;
     }
 }

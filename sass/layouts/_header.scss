@@ -1,11 +1,20 @@
 .header {
     background: $color-light;
     height: 130px;
+    @include media-tablet {
+        padding-left: 15px;
+    }
 }
 
 .header__wrapper {
     @extend %display;
     flex-direction: column;
+    @include media-tablet {
+        max-width: $tablet-width;
+    }
+    @include media-mobile {
+        max-width: $mobile-width;
+    }
 }
 
 .header__line-1 {

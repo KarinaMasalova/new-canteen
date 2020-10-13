@@ -1,5 +1,8 @@
 .feedbacks {
     padding: 38px 0 90px;
+    @include media-tablet {
+        padding: 0 0 115px;
+    }
 }
 
 .feedbacks__title {

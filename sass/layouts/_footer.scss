@@ -14,6 +14,11 @@
     margin: auto;
     @extend %display;
     justify-content: space-between;
+    @include media-tablet {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 0 16px;
+    }
 }
 
 .footer__link {
@@ -26,6 +31,9 @@
             text-decoration: underline;
         }
     }
+    @include media-tablet {
+        padding-bottom: 18px;
+    }
 }
 
 .footer__info {
@@ -36,10 +44,16 @@
     color: $color-light;
     justify-content: space-between;
     padding-top: 32px;
+    @include media-tablet {
+        @include font($size: 1.4rem, $weight: 700, $height: 1.4rem);
+    }
 }
 
 .footer__contacts {
     max-width: 540px;
+    @include media-tablet {
+        max-width: 319px;
+    }
 }
 
 .footer__rating {

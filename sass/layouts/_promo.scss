@@ -1,7 +1,13 @@
 .promo {
     background-image: url('../src/img/backgrounds/promo-bg.png');
     background-position: center center;
-    padding: 137px 0 202px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 137px 0 174px;
+    @include media-tablet {
+        background-position: 67% 50%;
+        background-size: auto;
+    }
 }
 
 .promo__title {
@@ -13,10 +19,14 @@
 }
 
 .promo__text {
+    margin: 0;
     padding: 19px 0 31px;
     max-width: 477px;
     @extend %font;
     @include font($size: 1.4rem, $weight: 300, $height: 1.68rem);
+    @include media-tablet {
+        max-width: 349px;
+    }
 }
 
 .promo__button {
@@ -25,6 +35,9 @@
 
 .promo__transition {
     background-image: url('../src/img/backgrounds/transition-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
     bottom: 0;
     width: 100%;
