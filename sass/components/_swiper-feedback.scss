@@ -1,14 +1,15 @@
-.swiper-container {
+
+.swiper__container {
     max-width: 64%;
     margin: 40px auto 51px;
     box-shadow: 0px 0px 15px rgba(163, 163, 163, 0.25);
 }
 
-.swiper-slide {
+.swiper__slide {
     background-color: $color-light;
 }
 
-.swiper-info {
+.swiper__info {
     margin: 19px;
     max-width: 707px;
     padding: 51px 63px 46px 66px;
@@ -16,7 +17,7 @@
     border-radius: 5px;
 }
 
-.swiper-text {
+.swiper__text {
     text-align: center;
     color: $color-dark;
     margin: auto;
@@ -24,7 +25,7 @@
     @include font($size: 1.4rem, $weight: 300, $height: 1.68rem);
 }
 
-.swiper-name {
+.swiper__name {
     text-align: center;
     color: $color-dark;
     margin: 0;
@@ -33,12 +34,12 @@
     @include font($size: 1.2rem, $weight: 500, $height: 1.44rem);
 }
 
-.swiper-apples {
+.swiper__apples {
     justify-content: center;
     @extend %display;
 }
 
-.swiper-apple {
+.swiper__apple {
     width: 14px;
     height: 14px;
     display: block;
@@ -50,19 +51,19 @@
     }
 }
 
-.swiper-button {
+.swiper__button {
     background-color: $color-primary;
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    &-prev:after {
+    &_prev:after {
         background-image: url('../src/img/icons/arrow-prev.svg');
     }
-    &-next:after {
+    &_next:after {
         background-image: url('../src/img/icons/arrow-next.svg');
     }
-    &-prev:after,
-    &-next:after {
+    &_prev:after,
+    &_next:after {
         background-position: center;
         content: '';
         width: 7px;
