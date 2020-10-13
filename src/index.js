@@ -4,7 +4,7 @@ import 'swiper/swiper-bundle.css';
 Swiper.use(Navigation);
 
 window.addEventListener('load', () => {
-  const swiper = new Swiper('.swiper-container', {    
+  const swiper1 = new Swiper('.swiper1', {    
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',    
@@ -13,10 +13,10 @@ window.addEventListener('load', () => {
     spaceBetween: 30,
   });
 
-  const swiperFeedback = new Swiper('.swiper__container', {    
+  const swiper2 = new Swiper('.swiper2', {    
     navigation: {
-      nextEl: '.swiper__button_next',
-      prevEl: '.swiper__button_prev',    
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
   });
 })

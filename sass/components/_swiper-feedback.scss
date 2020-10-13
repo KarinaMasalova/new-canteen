@@ -1,11 +1,11 @@
 
-.swiper__container {
+.swiper2 {
     max-width: 64%;
     margin: 40px auto 51px;
     box-shadow: 0px 0px 15px rgba(163, 163, 163, 0.25);
 }
 
-.swiper__slide {
+.swiper-slide {
     background-color: $color-light;
 }
 
@@ -51,22 +51,23 @@
     }
 }
 
-.swiper__button {
+.swiper-button {
     background-color: $color-primary;
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    &_prev:after {
-        background-image: url('../src/img/icons/arrow-prev.svg');
-    }
-    &_next:after {
-        background-image: url('../src/img/icons/arrow-next.svg');
-    }
-    &_prev:after,
-    &_next:after {
-        background-position: center;
-        content: '';
-        width: 7px;
-        height: 14px;
-    }
+}
+
+.swiper2-btn_prev:after,
+.swiper2-btn_next:after {
+    height: 14px;
+    width: 7px;
+}
+
+.swiper2-btn_next:after {
+    background-image: url('../src/img/icons/arrow-next.svg');
+}
+
+.swiper2-btn_prev:after  {
+    background-image: url('../src/img/icons/arrow-prev.svg');
 }
