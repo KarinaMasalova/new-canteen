@@ -1,0 +1,71 @@
+.swiper-container {
+    max-width: 64%;
+    margin: 40px auto 51px;
+    box-shadow: 0px 0px 15px rgba(163, 163, 163, 0.25);
+}
+
+.swiper-slide {
+    background-color: $color-light;
+}
+
+.swiper-info {
+    margin: 19px;
+    max-width: 707px;
+    padding: 51px 63px 46px 66px;
+    border: 1px solid rgba(244, 161, 123, 0.29);
+    border-radius: 5px;
+}
+
+.swiper-text {
+    text-align: center;
+    color: $color-dark;
+    margin: auto;
+    @extend %font;
+    @include font($size: 1.4rem, $weight: 300, $height: 1.68rem);
+}
+
+.swiper-name {
+    text-align: center;
+    color: $color-dark;
+    margin: 0;
+    padding: 35px 0 6px;
+    @extend %font;
+    @include font($size: 1.2rem, $weight: 500, $height: 1.44rem);
+}
+
+.swiper-apples {
+    justify-content: center;
+    @extend %display;
+}
+
+.swiper-apple {
+    width: 14px;
+    height: 14px;
+    display: block;
+    &_active {
+        background-image: url('../src/img/icons/apple-bright.svg');
+    }
+    &_inactive {
+        background-image: url('../src/img/icons/apple-light.svg');
+    }
+}
+
+.swiper-button {
+    background-color: $color-primary;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    &-prev:after {
+        background-image: url('../src/img/icons/arrow-prev.svg');
+    }
+    &-next:after {
+        background-image: url('../src/img/icons/arrow-next.svg');
+    }
+    &-prev:after,
+    &-next:after {
+        background-position: center;
+        content: '';
+        width: 7px;
+        height: 14px;
+    }
+}

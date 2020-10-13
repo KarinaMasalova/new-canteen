@@ -759,6 +759,26 @@ html {
   top: 5.5%;
 }
 
+.swiper-slide {
+  background-color: aqua;
+  box-shadow: 0px 0px 20px rgba(244, 161, 123, 0.18);
+}
+
+.swiper-info {
+  max-width: 70%;
+}
+
+.swiper-apple {
+  width: 14px;
+  height: 14px;
+}
+.swiper-apple_active {
+  background-image: url("../src/img/icons/apple-bright.svg");
+}
+.swiper-apple_inactive {
+  background-image: url("../src/img/icons/apple-light.svg");
+}
+
 .wrapper {
   max-width: 1170px;
   margin: auto;
