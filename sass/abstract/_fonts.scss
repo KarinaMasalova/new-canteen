@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Cyntho Next';
+    src: url('../src/fonts/CynthoNext-Light.eot'); /* IE9 Compat Modes */
+    src: url('../src/fonts/CynthoNext-Light.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../src/fonts/CynthoNext-Light.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../src/fonts/CynthoNext-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../src/fonts/CynthoNext-Light.svg') format('svg'); /* Legacy iOS */
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cyntho Next';
+    src: url('../src/fonts/CynthoNext-Regular.eot');
+    src: url('../src/fonts/CynthoNext-Regular.woff2') format('woff2'),
+         url('../src/fonts/CynthoNext-Regular.woff') format('woff'),
+         url('../src/fonts/CynthoNext-Regular.ttf')  format('truetype'),
+         url('../src/fonts/CynthoNext-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cyntho Next';
+    src: url('../src/fonts/CynthoNext-Medium.eot');
+    src: url('../src/fonts/CynthoNext-Medium.woff2') format('woff2'),
+         url('../src/fonts/CynthoNext-Medium.woff') format('woff'),
+         url('../src/fonts/CynthoNext-Medium.ttf')  format('truetype'),
+         url('../src/fonts/CynthoNext-Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cyntho Next';
+    src: url('../src/fonts/CynthoNext-Bold.eot');
+    src: url('../src/fonts/CynthoNext-Bold.woff2') format('woff2'),
+         url('../src/fonts/CynthoNext-Bold.woff') format('woff'),
+         url('../src/fonts/CynthoNext-Bold.ttf')  format('truetype'),
+         url('../src/fonts/CynthoNext-Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cyntho Next';
+    src: url('../src/fonts/CynthoNext-SemiBold.eot');
+    src: url('../src/fonts/CynthoNext-SemiBold.woff2') format('woff2'),
+         url('../src/fonts/CynthoNext-SemiBold.woff') format('woff'),
+         url('../src/fonts/CynthoNext-SemiBold.ttf')  format('truetype'),
+         url('../src/fonts/CynthoNext-SemiBold.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}

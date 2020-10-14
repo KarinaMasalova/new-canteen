@@ -1,0 +1,117 @@
+
+.swiper2 {
+    max-width: 64%;
+    margin: 40px auto 51px;
+    box-shadow: 0px 0px 15px rgba(163, 163, 163, 0.25);
+    @include media-tablet {
+        max-width: 95%;
+    }
+}
+
+.swiper-slide {
+    background-color: $color-light;
+}
+
+.swiper__info {
+    margin: 19px;
+    max-width: 707px;
+    padding: 51px 63px 46px 66px;
+    border: 1px solid rgba(244, 161, 123, 0.29);
+    border-radius: 5px;
+    @include media-mobile {
+        padding: 18px 18px 25px;
+        margin: 10px 10px 12px;
+    }
+}
+
+.swiper__text {
+    text-align: center;
+    color: $color-dark;
+    margin: auto;
+    @extend %font;
+    @include font($size: 1.4rem, $weight: 300, $height: 1.68rem);
+    @include media-mobile {
+        @include font($size: 1.0rem, $weight: 300, $height: 1.2rem);
+    }
+}
+
+.swiper__name {
+    text-align: center;
+    color: $color-dark;
+    margin: 0;
+    padding: 35px 0 6px;
+    @extend %font;
+    @include font($size: 1.2rem, $weight: 500, $height: 1.44rem);
+    @include media-mobile {
+        padding: 15px 0 5px;
+        @include font($size: 1.0rem, $weight: 500, $height: 1.2rem);
+    }
+}
+
+.swiper__apples {
+    justify-content: center;
+    @extend %display;
+}
+
+.swiper__apple {
+    width: 14px;
+    height: 14px;
+    display: block;
+    &_active {
+        background-image: url('../src/img/icons/apple-bright.svg');
+    }
+    &_inactive {
+        background-image: url('../src/img/icons/apple-light.svg');
+    }
+}
+
+.swiper-button {
+    background-color: $color-primary;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    @include media-mobile {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.swiper2-btn_next,
+.swiper2-btn_prev {
+    @include media-tablet {
+        top: 90%;
+    }
+    @include media-mobile {
+        top: 97%;
+    }
+}
+
+.swiper2-btn_next {
+    &:after {
+        background-image: url('../src/img/icons/arrow-next.svg');
+    }
+    @include media-tablet {
+        right: 40%;
+    }
+    @include media-mobile {
+        right: 37%;
+    }
+}
+
+.swiper2-btn_prev {
+    @include media-tablet {
+        left: 40%;
+    }
+    @include media-mobile {
+        left: 37%;
+    }
+    &:after {
+        background-image: url('../src/img/icons/arrow-prev.svg');
+    }
+}
+
+.swiper2-btn_prev:after,
+.swiper2-btn_next:after {
+    height: 14px;
+    width: 7px;
+}

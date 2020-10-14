@@ -1,0 +1,80 @@
+.about-project {
+    background-color: $color-light;
+    padding: 88px 0 55px;
+    @include media-tablet {
+        padding: 49px 0 0;
+    }
+    @include media-mobile {
+        padding: 25px 0 52px;
+    }
+}
+
+.about-project__wrapper {
+    @extend %display;
+    justify-content: space-between;
+    @include media-tablet {
+        flex-direction: column;
+    }
+}
+
+.about-project__info {
+    padding: 94px 0 111px;
+    @include media-tablet {
+        padding: 0;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.about-project__title {
+    color: $color-dark;
+    @extend %font;
+    @extend %case;
+    @include font($size: 2.6rem, $weight: 400, $height: 3.12rem);
+    @include media-tablet {
+        margin: 0;
+    }
+    @include media-mobile {
+        @include font($size: 2.0rem, $weight: 400, $height: 2.4rem);
+    }
+}
+
+.about-project__text {
+    color: $color-text;
+    align-items: left;
+    padding: 15px 0 38px;
+    margin: 0;
+    max-width: 465px;
+    @extend %font;
+    @include font($size: 1.4rem, $weight: 300, $height: 1.68rem);
+    @include media-mobile {
+        @include font($size: 1.0rem, $weight: 300, $height: 1.2rem);
+        padding: 12px 0 25px;
+    }
+}
+
+.about-project__img {
+    width: 605px;
+    height: 400px;
+    @include media-tablet {
+        padding-top: 59px;
+        margin: auto;
+        width: 90vw;
+        height: 75vw;
+    }
+    @include media-mobile {
+        width: 290px;
+        height: 193px;
+        padding-top: 35px;
+        object-fit: cover;
+    }
+}
+
+.about-project__button {
+    width: 184px;
+    @include media-mobile {
+        width: 123px;
+        white-space: nowrap;
+        padding: 11px 17px;
+    }
+}

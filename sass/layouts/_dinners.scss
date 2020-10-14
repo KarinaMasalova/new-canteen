@@ -1,0 +1,32 @@
+.dinners {
+    background-color: $color-light;
+    padding-bottom: 74px;
+    @include media-mobile {
+        padding-bottom: 41px;
+    }
+ }
+
+ .dinners__title {
+    @extend %case;
+    @extend %font;
+    @include font($size: 2.6rem, $weight: 400, $height: 3.12rem);
+    margin: 0;
+    text-align: center;
+    @include media-mobile {
+        @include font($size: 2.0rem, $weight: 400, $height: 2.5rem);
+    }
+ }
+
+.dinners__text {
+    text-align: center;
+    width: 373px;
+    margin: 0 auto;
+    padding: 12px 0 52px 0;
+    @extend %font;
+    @include font($size: 1.4rem, $weight: 300, $height: 1.68rem);
+    @include media-mobile {
+        max-width: 266px;
+        padding: 6px 0 25px;
+        @include font($size: 1.0rem, $weight: 300, $height: 1.2rem);
+    }
+}

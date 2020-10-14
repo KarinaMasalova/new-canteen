@@ -1,0 +1,18 @@
+.logo-header {
+    display: flex;
+    @include media-mobile {
+        width: 155.5px;
+        height: 40px;
+    }
+}
+
+.logo-path {
+    @extend %transition;
+}
+
+.logo-svg:hover {
+    cursor: pointer;
+    .logo-path {
+        fill: $color-primary;
+    }
+}

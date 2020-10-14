@@ -1,0 +1,28 @@
+.tag {
+    position: absolute;
+    left: 0;
+    padding: 4px 14px 5px;
+    border-radius: 5px;
+    color: $color-light;
+    @extend %font;
+    @include font($size: 1.2rem, $weight: 600, $height: 1.44rem);
+    &_new {
+        background-color: $color-new;
+    }
+    &_hit {
+        background-color: $color-hit;
+    }
+    &_sale {
+        background-color: $color-sale;
+    }
+    &_second {
+        top: 5.5%;
+        @include media-mobile {
+            top: 6.5%
+        }
+    }
+    @include media-mobile {
+        padding: 5px 13px;
+        @include font($size: 0.8rem, $weight: 600, $height: 0.96rem);
+    }
+}

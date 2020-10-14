@@ -1,0 +1,66 @@
+.header {
+    background: $color-light;
+    height: 130px;
+    @include media-tablet {
+        padding-left: 15px;
+    }
+    @include media-mobile {
+        height: 99px;
+    }
+}
+
+.header__wrapper {
+    @extend %display;
+    flex-direction: column;
+    @include media-tablet {
+        max-width: $tablet-width;
+    }
+    @include media-mobile {
+        max-width: $mobile-width;
+    }
+}
+
+.header__line-1 {
+    @extend %display;
+    height: 61px;
+    @include media-mobile {
+        height: 45px;
+    }
+}
+
+.header__line-2 {
+    @extend %display;
+    justify-content: space-between;
+    height: 68px;
+    position: relative;
+    @include media-mobile {
+        padding-top: 5px;
+        height: 67px;
+    }
+}
+
+.line-1__left {
+    width: 85%;
+    @extend %display;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1.5px solid $color-header-border;
+    @include media-mobile {
+        padding: 17px 0;
+        border-bottom: 0.5px solid $color-header-border;
+    }
+}
+
+.telephone {
+    color: $color-dark;
+    text-decoration: none;
+    @extend %font;
+    @include font($size: 2.0rem, $weight: 500, $height: 2.4rem);
+    @include media-mobile {
+        @include font($size: 1.0rem, $weight: 500, $height: 1.2rem);
+    }
+}
+
+.line-1__right {
+    @extend %display;
+}

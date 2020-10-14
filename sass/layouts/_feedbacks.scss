@@ -1,0 +1,46 @@
+.feedbacks {
+    padding: 38px 0 90px;
+    @include media-tablet {
+        padding: 0 0 115px;
+    }
+    @include media-mobile {
+        padding: 18px 0 59px;
+    }
+}
+
+.feedbacks__title {
+    @extend %case;
+    @extend %font;
+    @include font($size: 2.6rem, $weight: 400, $height: 3.12rem);
+    margin: 0;
+    text-align: center;
+    @include media-mobile {
+        @include font($size: 2.0rem, $weight: 400, $height: 2.4rem);
+    }
+}
+
+.feedbacks__buttons {
+    margin: auto;
+    @extend %display;
+    justify-content: space-between;
+    max-width: 373px;
+}
+
+.feedbacks__button1 {
+    width: 197px;
+    padding: 17px 28px;
+    @include media-mobile {
+        max-width: 146px;
+        padding: 13px 23px 16px 25px;
+        white-space: nowrap;
+    }
+}
+
+.feedbacks__button2 {
+    width: 160px;
+    padding: 17px 28px;
+    @include media-mobile {
+        max-width: 133px;
+        padding: 13px 23px 16px 25px;
+    }
+}

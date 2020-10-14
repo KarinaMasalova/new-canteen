@@ -1,0 +1,64 @@
+.eco-products {
+    background-image: url('../src/img/backgrounds/eco-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 130px 0 129px;
+    @include media-tablet {
+        padding: 133px 0 135px;
+    }
+    @include media-mobile {
+        padding: 66px 0 71px;
+        background-position: center;
+        background-size: auto;
+    }
+}
+
+.eco-products__title {
+    margin: 0;
+    padding-bottom: 78px;
+    color: $color-dark;
+    text-align: center;
+    @extend %case;
+    @extend %font;
+    @include font($size: 2.6rem, $weight: 400, $height: 3.12rem);
+    @include media-mobile {
+        @include font($size: 2.0rem, $weight: 400, $height: 2.4rem);
+        padding-bottom: 47px;
+    }
+}
+
+.eco-products__cards {
+    @extend %display;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 28px;
+    @include media-tablet {
+        justify-content: space-around;
+        max-width: 570px;
+        padding-bottom: 0;
+        margin: auto;
+    }
+}
+
+.eco-products__card {
+    display: block;
+    box-shadow: 0px 0px 20px rgba(244, 161, 123, 0.18);
+    border-radius: 5px;
+    position: relative;
+    margin: 0 10px 25px;
+    @include media-mobile {
+        max-width: 47%;
+        margin-bottom: 21px;
+    }
+}
+
+.eco-products__button {
+    display: block;
+    margin: 0 auto;
+    @include media-mobile {
+        width: 123px;
+        white-space: nowrap;
+        padding: 11px 14px;
+    }
+}

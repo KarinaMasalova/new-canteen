@@ -1,0 +1,64 @@
+.promo {
+    background-image: url('../src/img/backgrounds/promo-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 137px 0 174px;
+    @include media-tablet {
+        background-position: 67% 50%;
+        background-size: auto;
+    }
+    @include media-mobile {
+        padding: 53px 0 83px;
+        background-position: 65% 50%;
+        background-size: cover;
+    }
+}
+
+.promo__title {
+    margin: 0;
+    color: $color-dark;
+    max-width: 364px;
+    @extend %font;
+    @include font($size: 4.8rem, $weight: 700, $height: 5.76rem);
+    @include media-mobile {
+        max-width: 167px;
+        @include font($size: 2.2rem, $weight: 700, $height: 2.64rem);
+    }
+}
+
+.promo__text {
+    margin: 0;
+    padding: 19px 0 31px;
+    max-width: 477px;
+    @extend %font;
+    @include font($size: 1.4rem, $weight: 300, $height: 1.68rem);
+    @include media-tablet {
+        max-width: 349px;
+    }
+    @include media-mobile {
+        max-width: 157px;
+        @include font($size: 1.0rem, $weight: 300, $height: 1.2rem);
+    }
+}
+
+.promo__button {
+    width: 184px;
+    @include media-mobile {
+        width: 116px;
+    }
+}
+
+.promo__transition {
+    background-image: url('../src/img/backgrounds/transition-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 77px;
+    @include media-mobile {
+        height: 22px;
+    }
+}
