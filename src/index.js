@@ -5,16 +5,26 @@ Swiper.use(Navigation);
 
 const HAMBURGER = document.querySelector('.hamburger');
 const NAV = document.querySelector('.navigation');
+const NAV_ITEMS = document.querySelectorAll('.navigation__item');
 
 HAMBURGER.addEventListener('click', (event) => {
   if (NAV.classList.contains('navigation_active')) {
-      HAMBURGER.classList.remove('hamburger_active');
-      HAMBURGER.classList.add('hamburger_inactive');
-      NAV.classList.remove('navigation_active');
+    HAMBURGER.classList.toggle('hamburger_active');
+    HAMBURGER.classList.add('hamburger_inactive');
+    NAV.classList.toggle('navigation_active');
   } else {
-      HAMBURGER.classList.remove('hamburger_inactive');
-      HAMBURGER.classList.add('hamburger_active');
-      NAV.classList.add('navigation_active');
+    HAMBURGER.classList.remove('hamburger_inactive');
+    HAMBURGER.classList.toggle('hamburger_active');
+    NAV.classList.toggle('navigation_active');
+  }
+
+  if(!NAV.classList.contains('navigation_dropped')) {
+    NAV.classList.toggle('navigation_dropped');
+    NAV_ITEMS.forEach((item) => item.classList.add('navigation__item_dropped'));
+
+  } else {
+    NAV.classList.toggle('navigation_dropped');
+    NAV_ITEMS.forEach((item) => item.classList.remove('navigation__item_dropped'));
   }
 });
 
