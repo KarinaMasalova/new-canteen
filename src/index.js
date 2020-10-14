@@ -6,25 +6,30 @@ Swiper.use(Navigation);
 const HAMBURGER = document.querySelector('.hamburger');
 const NAV = document.querySelector('.navigation');
 const NAV_ITEMS = document.querySelectorAll('.navigation__item');
+const NAV_LISTS = document.querySelectorAll('.drop-menu__list');
+const MAIN = document.querySelector('.main');
 
 HAMBURGER.addEventListener('click', (event) => {
   if (NAV.classList.contains('navigation_active')) {
     HAMBURGER.classList.toggle('hamburger_active');
     HAMBURGER.classList.add('hamburger_inactive');
     NAV.classList.toggle('navigation_active');
+    MAIN.classList.toggle('main_blur');
   } else {
     HAMBURGER.classList.remove('hamburger_inactive');
     HAMBURGER.classList.toggle('hamburger_active');
     NAV.classList.toggle('navigation_active');
+    MAIN.classList.toggle('main_blur');
   }
 
   if(!NAV.classList.contains('navigation_dropped')) {
     NAV.classList.toggle('navigation_dropped');
     NAV_ITEMS.forEach((item) => item.classList.add('navigation__item_dropped'));
-
+    NAV_LISTS.forEach((item) => item.classList.add('drop-menu__list_dropped'));
   } else {
     NAV.classList.toggle('navigation_dropped');
     NAV_ITEMS.forEach((item) => item.classList.remove('navigation__item_dropped'));
+    NAV_LISTS.forEach((item) => item.classList.remove('drop-menu__list_dropped'));
   }
 });
 
