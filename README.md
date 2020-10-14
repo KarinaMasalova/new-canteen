@@ -1,2 +1,7 @@
 # New Canteen
-The deploy is here: [https://karinamasalova.github.io/new-canteen/](https://karinamasalova.github.io/new-canteen/).
+Для запуска приложения скачайте, пожалуйста, код архивом (или склонируйте себе локально).
+
+Далее выполните команды:
+* ```npm install```
+* ```npm run dev```
+* ```npm run server```
