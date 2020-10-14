@@ -2,7 +2,7 @@
     background-color: $color-light;
     padding: 88px 0 55px;
     @include media-tablet {
-        padding: 49px 0 91px;
+        padding: 49px 0 0;
     }
     @include media-mobile {
         padding: 25px 0 52px;
@@ -59,6 +59,8 @@
     @include media-tablet {
         padding-top: 59px;
         margin: auto;
+        width: 90vw;
+        height: 75vw;
     }
     @include media-mobile {
         width: 290px;

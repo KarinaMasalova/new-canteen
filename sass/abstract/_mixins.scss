@@ -5,6 +5,14 @@
     line-height: $height;
 }
 
+@mixin media-972 {
+    @media (max-width: 972px) { @content; }
+}
+
+@mixin media-1024 {
+    @media (max-width: 1024px) { @content; }
+}
+
 @mixin media-tablet {
     @media (max-width: $tablet-width) { @content; }
 }

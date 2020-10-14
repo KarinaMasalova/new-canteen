@@ -1,6 +1,7 @@
 .card__img {
     background-color: $color-light;
     border-radius: 5px;
+    width: 100%;
     @include media-tablet  {
         width: 100%;
     }

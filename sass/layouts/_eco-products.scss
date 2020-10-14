@@ -30,7 +30,7 @@
 
 .eco-products__cards {
     @extend %display;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding-bottom: 28px;
     @include media-tablet {
@@ -46,7 +46,7 @@
     box-shadow: 0px 0px 20px rgba(244, 161, 123, 0.18);
     border-radius: 5px;
     position: relative;
-    margin-bottom: 25px;
+    margin: 0 10px 25px;
     @include media-mobile {
         max-width: 47%;
         margin-bottom: 21px;

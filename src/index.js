@@ -39,7 +39,15 @@ window.addEventListener('load', () => {
         slidesPerView: 4,
         spaceBetween: 30,
       },
+      900: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
       768: {
+        slidesPerView: 2.5,
+        spaceBetween: 30,
+      },
+      440: {
         slidesPerView: 2.5,
         spaceBetween: 30,
       },

@@ -22,9 +22,7 @@
             }
         }
     }
-    @include media-tablet {
-        display: none;
-    }
+    @include media-972 { display: none; }
     &_active {
         display: block;
         position: relative;
