@@ -3,6 +3,21 @@ import 'swiper/swiper-bundle.css';
 
 Swiper.use(Navigation);
 
+const HAMBURGER = document.querySelector('.hamburger');
+const NAV = document.querySelector('.navigation');
+
+HAMBURGER.addEventListener('click', (event) => {
+  if (NAV.classList.contains('navigation_active')) {
+      HAMBURGER.classList.remove('hamburger_active');
+      HAMBURGER.classList.add('hamburger_inactive');
+      NAV.classList.remove('navigation_active');
+  } else {
+      HAMBURGER.classList.remove('hamburger_inactive');
+      HAMBURGER.classList.add('hamburger_active');
+      NAV.classList.add('navigation_active');
+  }
+});
+
 window.addEventListener('load', () => {
   const swiper1 = new Swiper('.swiper1', {    
     navigation: {

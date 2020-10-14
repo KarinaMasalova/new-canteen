@@ -16,6 +16,11 @@
     @include media-tablet {
         display: none;
     }
+    &_active {
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
 }
 
 .drop-menu__list {
