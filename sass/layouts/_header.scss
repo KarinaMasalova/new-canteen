@@ -3,7 +3,9 @@
     height: 130px;
     @include media-tablet {
         padding-left: 15px;
-        height: 98px;
+    }
+    @include media-mobile {
+        height: 99px;
     }
 }
 
