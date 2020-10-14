@@ -3,6 +3,7 @@
     height: 130px;
     @include media-tablet {
         padding-left: 15px;
+        height: 98px;
     }
 }
 
@@ -20,12 +21,19 @@
 .header__line-1 {
     @extend %display;
     height: 61px;
+    @include media-mobile {
+        height: 45px;
+    }
 }
 
 .header__line-2 {
     @extend %display;
     justify-content: space-between;
     height: 68px;
+    @include media-mobile {
+        padding-top: 5px;
+        height: 67px;
+    }
 }
 
 .line-1__left {
@@ -34,6 +42,9 @@
     justify-content: space-between;
     padding: 20px 0;
     border-bottom: 1.5px solid $color-header-border;
+    @include media-mobile {
+        padding: 17px 0;
+    }
 }
 
 .telephone {
@@ -41,6 +52,9 @@
     text-decoration: none;
     @extend %font;
     @include font($size: 2.0rem, $weight: 500, $height: 2.4rem);
+    @include media-mobile {
+        @include font($size: 1.0rem, $weight: 500, $height: 1.2rem);
+    }
 }
 
 .line-1__right {

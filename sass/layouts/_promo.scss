@@ -8,6 +8,11 @@
         background-position: 67% 50%;
         background-size: auto;
     }
+    @include media-mobile {
+        padding: 53px 0 83px;
+        background-position: 65% 50%;
+        background-size: cover;
+    }
 }
 
 .promo__title {
@@ -16,6 +21,10 @@
     max-width: 364px;
     @extend %font;
     @include font($size: 4.8rem, $weight: 700, $height: 5.76rem);
+    @include media-mobile {
+        max-width: 167px;
+        @include font($size: 2.2rem, $weight: 700, $height: 2.64rem);
+    }
 }
 
 .promo__text {
@@ -27,10 +36,17 @@
     @include media-tablet {
         max-width: 349px;
     }
+    @include media-mobile {
+        max-width: 157px;
+        @include font($size: 1.0rem, $weight: 300, $height: 1.2rem);
+    }
 }
 
 .promo__button {
     width: 184px;
+    @include media-mobile {
+        width: 116px;
+    }
 }
 
 .promo__transition {
@@ -42,4 +58,7 @@
     bottom: 0;
     width: 100%;
     height: 77px;
+    @include media-mobile {
+        height: 22px;
+    }
 }

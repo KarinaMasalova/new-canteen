@@ -1,7 +1,7 @@
 .button {
     @extend %font;
     @extend %case;
-    @include font($size: 1.4rem, $weight: 600, $height: 1.68rem);
+    @include font($size: 1.0rem, $weight: 600, $height: 1.2rem);
     padding: 17px 28px;
     border-radius: 5px;
     cursor: pointer;
@@ -22,5 +22,8 @@
             background-color: $color-primary;
             color: $color-light;
         }
+    }
+    @include media-mobile {
+        padding: 9px 24px 12.15px 25px;
     }
 }

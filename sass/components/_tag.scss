@@ -17,5 +17,12 @@
     }
     &_second {
         top: 5.5%;
+        @include media-mobile {
+            top: 6.5%
+        }
+    }
+    @include media-mobile {
+        padding: 5px 13px;
+        @include font($size: 0.8rem, $weight: 600, $height: 0.96rem);
     }
 }

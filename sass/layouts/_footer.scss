@@ -1,11 +1,18 @@
 .footer {
     background-color: $color-primary;
     padding: 42px 0 40px;
+    @include media-mobile {
+        padding: 19px 0 5px;
+    }
 }
 
 .footer__logo {
     @extend %display;
     margin: auto;
+    @include media-mobile {
+        width: 51px;
+        height: 82px;
+    }
 }
 
 .footer__navigation {
@@ -19,6 +26,9 @@
         text-align: center;
         padding: 45px 0 16px;
     }
+    @include media-mobile {
+        padding: 31px 0 6px;
+    }
 }
 
 .footer__link {
@@ -30,9 +40,15 @@
         &:hover {
             text-decoration: underline;
         }
+        @include media-mobile {
+            @include font($size: 1.0rem, $weight: 600, $height: 1.2rem);
+        }
     }
     @include media-tablet {
         padding-bottom: 18px;
+    }
+    @include media-mobile {
+        padding-bottom: 11px;
     }
 }
 
@@ -47,6 +63,10 @@
     @include media-tablet {
         @include font($size: 1.4rem, $weight: 700, $height: 1.4rem);
     }
+    @include media-mobile {
+        @include font($size: 0.8rem, $weight: 700, $height: 0.8rem);
+        padding-top: 11px;
+    }
 }
 
 .footer__contacts {
@@ -54,9 +74,18 @@
     @include media-tablet {
         max-width: 319px;
     }
+    @include media-mobile {
+        max-width: 124px;
+        >* {
+            margin: 0 0 9px;
+        }
+    }
 }
 
 .footer__rating {
     text-align: right;
     max-width: 329px;
+    @include media-mobile {
+        max-width: 125px;
+    }
 }

@@ -1,5 +1,9 @@
 .logo-header {
     display: flex;
+    @include media-mobile {
+        width: 155.5px;
+        height: 40px;
+    }
 }
 
 .logo-path {
