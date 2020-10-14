@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая столовая</title>
+    <link rel="icon" href="./src/img/logo-icon.svg">
+    <link rel="stylesheet" href="./sass/style.css"> 
+<link href="main.css" rel="stylesheet"></head>
+<body>
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <div class="header__line-1 line-1">
+                <div class="line-1__left">
+                    <a class="telephone" href="tel:375333750760">+ 375 (33) 375-07-60</a>
+                    <span class="ico ico-instagram_bright">
+                        <a href="#"></a>
+                    </span>
+                </div>
+                <div class="line-1__right">
+                    <span class="icon-square icon-square_search">
+                        <span class="ico ico_search"></span>
+                    </span>
+                    <span class="icon-square icon-square_user">
+                        <span class="ico ico_user"></span>
+                    </span>
+                    <span class="icon-square icon-square_cart">
+                        <span class="ico ico_cart"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="header__line-2">
+                <a href="#" class="logo-header">
+                    <object type="image/svg+xml" data="./src/img/logo-header.svg" class="logo-object">
+                        Your browser does not support SVG 
+                    </object>
+                </a>
+                <span class="hamburger">
+                    <span class="hamburger__line"></span>
+                </span>
+                <nav class="header__navigation">
+                    <ul class="navigation">
+                        <li class="navigation__item drop-menu">
+                            <a class="navigation__link" href="#">меню</a>
+                            <span class="ico ico_arrow-down"></span>
+                            <ul class="drop-menu__list">
+                                <li class="drop-menu__item">
+                                    <a class="drop-menu__link" href="#">завтраки</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a class="drop-menu__link" href="#">обеды</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a class="drop-menu__link" href="#">десерты</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a class="drop-menu__link" href="#">хлеб и выпечка</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a class="drop-menu__link" href="#">соусы и намазки</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a class="drop-menu__link" href="#">напитки</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item drop-menu">
+                            <a class="navigation__link" href="#">магазин</a>
+                            <span class="ico ico_arrow-down"></span>
+                            <ul class="drop-menu__list">
+                                <li class="drop-menu__item">
+                                    <a class="drop-menu__link" href="#">завтраки</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a class="drop-menu__link" href="#">обеды</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a class="drop-menu__link" href="#">десерты</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a class="drop-menu__link" href="#">хлеб и выпечка</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a class="drop-menu__link" href="#">соусы и намазки</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a class="drop-menu__link" href="#">напитки</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">подписка</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">доставка</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">партнерам</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link" href="#">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="promo">
+            <div class="wrapper">
+                <h1 class="promo__title">Medium length display headline</h1>
+                <p class="promo__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.</p>
+                <button class="button button_colored promo__button">подробнее</button>
+            </div>
+            <span class="promo__transition"></span>
+        </section>
+        <section class="dinners">
+            <div class="wrapper">
+                <h2 class="dinners__title">обеды</h2>
+                <p class="dinners__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                <ul class="categories">
+                    <li class="category__item">
+                        <a class="category__link">понедельник</a>
+                    </li>
+                    <li class="category__item">
+                        <a class="category__link">вторник</a>
+                    </li>
+                    <li class="category__item category_active">
+                        <a class="category__link category__link_active">среда</a>
+                    </li>
+                    <li class="category__item">
+                        <a class="category__link">четверг</a>
+                    </li>
+                    <li class="category__item">
+                        <a class="category__link">пятница</a>
+                    </li>
+                    <li class="category__item category_active">
+                        <a class="category__link">суббота</a>
+                    </li>
+                    <li class="category__item">
+                        <a class="category__link">воскресенье</a>
+                    </li>
+                </ul>
+                <div class="swiper-container swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/salad.png" alt="Salad">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">2,5р</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__amount">
+                                        <span class="card__substract">-</span>
+                                        <span class="card__number">2</span>
+                                        <span class="card__add">+</span>
+                                    </div>
+                                    <button class="button button_colored card__button">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/salad.png" alt="Salad">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">2,5р</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__amount">
+                                        <span class="card__substract">-</span>
+                                        <span class="card__number">2</span>
+                                        <span class="card__add">+</span>
+                                    </div>
+                                    <button class="button button_colored card__button">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/salad.png" alt="Salad">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">2,5р</p>
+                                </div>
+                                <p class="card__exception">Только во вторник</p>
+                            </div>
+                          </div>
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/salad.png" alt="Salad">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">2,5р</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__amount">
+                                        <span class="card__substract">-</span>
+                                        <span class="card__number">2</span>
+                                        <span class="card__add">+</span>
+                                    </div>
+                                    <button class="button button_colored card__button">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/salad.png" alt="Salad">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">2,5р</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__amount">
+                                        <span class="card__substract">-</span>
+                                        <span class="card__number">2</span>
+                                        <span class="card__add">+</span>
+                                    </div>
+                                    <button class="button button_colored card__button">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/salad.png" alt="Salad">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">2,5р</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__amount">
+                                        <span class="card__substract">-</span>
+                                        <span class="card__number">2</span>
+                                        <span class="card__add">+</span>
+                                    </div>
+                                    <button class="button button_colored card__button">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/salad.png" alt="Salad">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">2,5р</p>
+                                </div>
+                                <p class="card__exception">Только во вторник</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/salad.png" alt="Salad">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">2,5р</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__amount">
+                                        <span class="card__substract">-</span>
+                                        <span class="card__number">2</span>
+                                        <span class="card__add">+</span>
+                                    </div>
+                                    <button class="button button_colored card__button">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper1-btn_next"></div>
+                    <div class="swiper-button-prev swiper1-btn_prev"></div>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <div class="wrapper">
+                <h2 class="menu__title">меню</h2>
+                <p class="menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                <ul class="categories">
+                    <li class="category__item category_active">
+                        <a class="category__link category__link_active">десерты</a>
+                    </li>
+                    <li class="category__item">
+                        <a class="category__link">хлеб и выпечка</a>
+                    </li>
+                    <li class="category__item">
+                        <a class="category__link">соусы и намазки</a>
+                    </li>
+                    <li class="category__item">
+                        <a class="category__link">напитки</a>
+                    </li>
+                    <li class="category__item">
+                        <a class="category__link">завтраки</a>
+                    </li>
+                </ul>
+                <div class="swiper-container swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/pancakes.png" alt="Pancakes">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">7,5р</p>
+                                </div>
+                                <p class="card__exception">Только во вторник</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/pancakes.png" alt="Pancakes">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">7,5р</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__amount">
+                                        <span class="card__substract">-</span>
+                                        <span class="card__number">2</span>
+                                        <span class="card__add">+</span>
+                                    </div>
+                                    <button class="button button_colored card__button">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/pancakes.png" alt="Pancakes">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">7,5р</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__amount">
+                                        <span class="card__substract">-</span>
+                                        <span class="card__number">2</span>
+                                        <span class="card__add">+</span>
+                                    </div>
+                                    <button class="button button_colored card__button">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/pancakes.png" alt="Pancakes">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">7,5р</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__amount">
+                                        <span class="card__substract">-</span>
+                                        <span class="card__number">2</span>
+                                        <span class="card__add">+</span>
+                                    </div>
+                                    <button class="button button_colored card__button">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/pancakes.png" alt="Pancakes">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">7,5р</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__amount">
+                                        <span class="card__substract">-</span>
+                                        <span class="card__number">2</span>
+                                        <span class="card__add">+</span>
+                                    </div>
+                                    <button class="button button_colored card__button">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/pancakes.png" alt="Pancakes">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">7,5р</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__amount">
+                                        <span class="card__substract">-</span>
+                                        <span class="card__number">2</span>
+                                        <span class="card__add">+</span>
+                                    </div>
+                                    <button class="button button_colored card__button">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/pancakes.png" alt="Pancakes">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">7,5р</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__amount">
+                                        <span class="card__substract">-</span>
+                                        <span class="card__number">2</span>
+                                        <span class="card__add">+</span>
+                                    </div>
+                                    <button class="button button_colored card__button">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="card__img" src="./src/img/meal/pancakes.png" alt="Pancakes">
+                            <div class="card__body">
+                                <h5 class="card__title">Морковный крем-суп с имбирем и печеным нутом</h5>
+                                <div class="card__characteristics">
+                                    <p class="card__weight">170г</p>
+                                    <p class="card__price">7,5р</p>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__amount">
+                                        <span class="card__substract">-</span>
+                                        <span class="card__number">2</span>
+                                        <span class="card__add">+</span>
+                                    </div>
+                                    <button class="button button_colored card__button">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper1-btn_next"></div>
+                    <div class="swiper-button-prev swiper1-btn_prev"></div>
+                </div>
+            </div>
+        </section>
+        <section class="about-project">
+            <div class="wrapper about-project__wrapper">
+                <div class="about-project__info">
+                    <h2 class="about-project__title">о проекте</h2>
+                    <p class="about-project__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.</p>
+                    <button class="button button_colored about-project__button">как добраться</button>
+                </div>
+                <img class="about-project__img" src="src/img/about-project/about-project.png" alt="">
+            </div>
+        </section>
+        <section class="eco-products">
+            <div class="wrapper">
+                <h2 class="eco-products__title">эко-продукты от «шанти лавка»</h2>
+                <div class="eco-products__cards">
+                    <div class="eco-products__card">
+                        <span class="tag tag_new">Новинка</span>
+                        <img class="card__img" src="./src/img/meal/coconut-oil.png" alt="Coconut oil">
+                        <div class="card__body">
+                            <p class="card__category">Натуральные масла</p>
+                            <h5 class="card__title">Масло кокосовое</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">90р</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__amount">
+                                    <span class="card__substract">-</span>
+                                    <span class="card__number">2</span>
+                                    <span class="card__add">+</span>
+                                </div>
+                                <button class="button button_colored card__button">в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eco-products__card">
+                        <span class="tag tag_hit">Хит</span>
+                        <img class="card__img" src="./src/img/meal/chocolate.png" alt="Chocolate">
+                        <div class="card__body">
+                            <p class="card__category">Сладости, шоколад, сиропы</p>
+                            <h5 class="card__title">Шоколад на меду горький</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">7,5р</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__amount">
+                                    <span class="card__substract">-</span>
+                                    <span class="card__number">2</span>
+                                    <span class="card__add">+</span>
+                                </div>
+                                <button class="button button_colored card__button">в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eco-products__card">
+                        <span class="tag tag_hit">Хит</span>
+                        <span class="tag tag_new tag_second">Новинка</span>
+                        <img class="card__img" src="./src/img/meal/red-cabbage.png" alt="Red cabbage">
+                        <div class="card__body">
+                            <p class="card__category">Натуральные масла</p>
+                            <h5 class="card__title">Маринованная красная капуста</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">90р</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__amount">
+                                    <span class="card__substract">-</span>
+                                    <span class="card__number">2</span>
+                                    <span class="card__add">+</span>
+                                </div>
+                                <button class="button button_colored card__button">в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eco-products__card">
+                        <span class="tag tag_sale">Акция</span>
+                        <img class="card__img" src="./src/img/meal/red-cabbage.png" alt="Red cabbage">
+                        <div class="card__body">
+                            <p class="card__category">Натуральные масла</p>
+                            <h5 class="card__title">Маринованная красная капуста</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">90р</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__amount">
+                                    <span class="card__substract">-</span>
+                                    <span class="card__number">2</span>
+                                    <span class="card__add">+</span>
+                                </div>
+                                <button class="button button_colored card__button">в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eco-products__card">
+                        <span class="tag tag_new">Новинка</span>
+                        <img class="card__img" src="./src/img/meal/coconut-oil.png" alt="Coconut oil">
+                        <div class="card__body">
+                            <p class="card__category">Натуральные масла</p>
+                            <h5 class="card__title">Масло кокосовое</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">90р</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__amount">
+                                    <span class="card__substract">-</span>
+                                    <span class="card__number">2</span>
+                                    <span class="card__add">+</span>
+                                </div>
+                                <button class="button button_colored card__button">в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eco-products__card">
+                        <span class="tag tag_hit">Хит</span>
+                        <img class="card__img" src="./src/img/meal/chocolate.png" alt="Chocolate">
+                        <div class="card__body">
+                            <p class="card__category">Сладости, шоколад, сиропы</p>
+                            <h5 class="card__title">Шоколад на меду горький</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">7,5р</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__amount">
+                                    <span class="card__substract">-</span>
+                                    <span class="card__number">2</span>
+                                    <span class="card__add">+</span>
+                                </div>
+                                <button class="button button_colored card__button">в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eco-products__card">
+                        <span class="tag tag_hit">Хит</span>
+                        <span class="tag tag_new tag_second">Новинка</span>
+                        <img class="card__img" src="./src/img/meal/red-cabbage.png" alt="Red cabbage">
+                        <div class="card__body">
+                            <p class="card__category">Натуральные масла</p>
+                            <h5 class="card__title">Маринованная красная капуста</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">90р</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__amount">
+                                    <span class="card__substract">-</span>
+                                    <span class="card__number">2</span>
+                                    <span class="card__add">+</span>
+                                </div>
+                                <button class="button button_colored card__button">в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eco-products__card">
+                        <span class="tag tag_sale">Акция</span>
+                        <img class="card__img" src="./src/img/meal/red-cabbage.png" alt="Red cabbage">
+                        <div class="card__body">
+                            <p class="card__category">Натуральные масла</p>
+                            <h5 class="card__title">Маринованная красная капуста</h5>
+                            <div class="card__characteristics">
+                                <p class="card__weight">170г</p>
+                                <p class="card__price">90р</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__amount">
+                                    <span class="card__substract">-</span>
+                                    <span class="card__number">2</span>
+                                    <span class="card__add">+</span>
+                                </div>
+                                <button class="button button_colored card__button">в корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="button button_colored eco-products__button">посмотреть все</button>
+            </div>
+        </section>
+        <section class="feedbacks">
+            <div class="wrapper">
+                <h2 class="feedbacks__title">отзывы</h2>
+                <div class="swiper-container swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper2-slide" style="width: 746px;">
+                            <div class="swiper__info">
+                                <p class="swiper__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+                                <p class="swiper__name">Алексей</p>
+                                <div class="swiper__apples">
+                                    <span class="swiper__apple swiper__apple_active"></span>
+                                    <span class="swiper__apple swiper__apple_active"></span>
+                                    <span class="swiper__apple swiper__apple_active"></span>
+                                    <span class="swiper__apple swiper__apple_active"></span>
+                                    <span class="swiper__apple swiper__apple_inactive"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 746px;">
+                            <div class="swiper__info">
+                                <p class="swiper__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+                                <p class="swiper__name">Кирилл</p>
+                                <div class="swiper__apples">
+                                    <span class="swiper__apple swiper__apple_active"></span>
+                                    <span class="swiper__apple swiper__apple_active"></span>
+                                    <span class="swiper__apple swiper__apple_active"></span>
+                                    <span class="swiper__apple swiper__apple_active"></span>
+                                    <span class="swiper__apple swiper__apple_active"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 746px;">
+                            <div class="swiper__info">
+                                <p class="swiper__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+                                <p class="swiper__name">Роман</p>
+                                <div class="swiper__apples">
+                                    <span class="swiper__apple swiper__apple_active"></span>
+                                    <span class="swiper__apple swiper__apple_active"></span>
+                                    <span class="swiper__apple swiper__apple_active"></span>
+                                    <span class="swiper__apple swiper__apple_inactive"></span>
+                                    <span class="swiper__apple swiper__apple_inactive"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button swiper-button-prev swiper2-btn_prev"></div>
+                    <div class="swiper-button swiper-button-next swiper2-btn_next"></div>
+                </div>
+                <div class="feedbacks__buttons">
+                    <button class="button button_colored feedbacks__button1">написать отзыв</button>
+                    <button class="button button_bordered feedbacks__button2">все отзывы</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <img class="footer__logo" src="src/img/logo-footer.svg" alt="">
+            <ul class="footer__navigation">
+                <li class="footer__link"><a href="#">Меню</a></li>
+                <li class="footer__link"><a href="#">Магазин</a></li>
+                <li class="footer__link"><a href="#">Подписка</a></li>
+                <li class="footer__link"><a href="#">Доставка</a></li>
+                <li class="footer__link"><a href="#">Партнерам</a></li>
+                <li class="footer__link"><a href="#">Контакты</a></li>
+            </ul>
+            <span class="ico ico-instagram_light">
+                <a href="#"></a>
+            </span>
+            <div class="footer__info">
+                <div class="footer__contacts">
+                    <p>ООО "Метаркоф" УНП 193230335 Зарегистрирован Минским Горисполкомом</p>
+                    <p>Регистрационный номер в торговом реестре 353939 от 03.10.2016</p>
+                    <p>220025 Есенина 23-1-145</p>
+                </div>
+                <div class="footer__rating">
+                    <p>Рейтинг: 4.2 (На основе 19 отзывов)</p>
+                    <p>Разработка и продвижение сайта Mediashark.by</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="main.js"></script></body>
+</html>
